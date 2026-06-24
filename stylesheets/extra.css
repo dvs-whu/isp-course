@@ -1,0 +1,113 @@
+/* 智能信号处理课程自定义样式 */
+
+/* 首页hero区域 */
+.md-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 卡片样式 */
+.grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* 表格样式 */
+table {
+  font-size: 0.85em;
+}
+
+table th {
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+  font-weight: 600;
+}
+
+/* 代码块样式 */
+.md-typeset code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+}
+
+/* 标题锚点 */
+.md-typeset .headerlink {
+  color: var(--md-accent-fg-color);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.md-typeset h1:hover .headerlink,
+.md-typeset h2:hover .headerlink,
+.md-typeset h3:hover .headerlink {
+  opacity: 1;
+}
+
+/* Admonition样式增强 */
+.md-typeset .admonition {
+  border-radius: 8px;
+}
+
+/* 进度条样式 */
+.progress {
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* 标签样式 */
+.md-typeset .tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin: 2px;
+}
+
+.tag-classic { background-color: #e3f2fd; color: #1565c0; }
+.tag-ai { background-color: #f3e5f5; color: #7b1fa2; }
+.tag-project { background-color: #e8f5e9; color: #2e7d32; }
+.tag-lab { background-color: #fff3e0; color: #ef6c00; }
+
+/* 响应式调整 */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+}
+
+/* 数学公式样式 */
+.md-typeset .MathJax {
+  font-size: 1.05em;
+}
+
+/* 图片样式 */
+.md-typeset img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 链接样式 */
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
