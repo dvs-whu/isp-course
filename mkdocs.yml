@@ -1,0 +1,184 @@
+# 智能信号处理 · 课程网站
+# MkDocs Material 配置
+
+site_name: 智能信号处理
+site_url: https://dvs-whu.github.io/isp-course/
+site_author: 余磊
+site_description: 武汉大学人工智能学院 · 2026年秋季学期
+
+repo_name: isp-course
+repo_url: https://github.com/dvs-whu/isp-course
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 余磊 - 武汉大学人工智能学院
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/school
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang: zh
+  - tags
+  - callouts
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dvs-whu
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首页: index.md
+  - 课程信息:
+    - 课程大纲: syllabus.md
+    - 教学进度: schedule.md
+    - 考核标准: grading.md
+  - 知识点:
+    - 经典信号处理:
+      - 信号与系统基础: 知识点/经典信号处理/信号与系统基础.md
+      - 傅里叶分析: 知识点/经典信号处理/傅里叶分析.md
+      - 采样与重建: 知识点/经典信号处理/采样与重建.md
+      - 数字滤波器设计: 知识点/经典信号处理/数字滤波器设计.md
+      - Z变换: 知识点/经典信号处理/Z变换.md
+    - 时频分析:
+      - 短时傅里叶变换: 知识点/时频分析/短时傅里叶变换.md
+      - 小波变换: 知识点/时频分析/小波变换.md
+      - 时频分布: 知识点/时频分析/时频分布.md
+      - 经验模态分解: 知识点/时频分析/经验模态分解.md
+    - 统计信号处理:
+      - 随机信号基础: 知识点/统计信号处理/随机信号基础.md
+      - 功率谱估计: 知识点/统计信号处理/功率谱估计.md
+      - 维纳滤波: 知识点/统计信号处理/维纳滤波.md
+      - 卡尔曼滤波: 知识点/统计信号处理/卡尔曼滤波.md
+      - 自适应滤波: 知识点/统计信号处理/自适应滤波.md
+    - 深度学习:
+      - 深度学习基础: 知识点/深度学习/深度学习基础.md
+      - 展开网络: 知识点/深度学习/展开网络.md
+      - 生成模型: 知识点/深度学习/生成模型.md
+    - 图像信号处理:
+      - 图像去噪: 知识点/图像信号处理/图像去噪.md
+      - 图像超分辨率: 知识点/图像信号处理/图像超分辨率.md
+      - 图像重建: 知识点/图像信号处理/图像重建.md
+      - 计算成像: 知识点/图像信号处理/计算成像.md
+    - 语音信号处理:
+      - 语音信号基础: 知识点/语音信号处理/语音信号基础.md
+      - 语音增强: 知识点/语音信号处理/语音增强.md
+      - 语音分离: 知识点/语音信号处理/语音分离.md
+      - 声源定位: 知识点/语音信号处理/声源定位.md
+    - 事件驱动:
+      - 事件相机基础: 知识点/事件驱动/事件相机基础.md
+      - 事件流处理算法: 知识点/事件驱动/事件流处理算法.md
+      - 事件驱动视觉应用: 知识点/事件驱动/事件驱动视觉应用.md
+      - 脉冲神经网络: 知识点/事件驱动/脉冲神经网络.md
+    - 稀疏信号处理:
+      - 压缩感知: 知识点/稀疏信号处理/压缩感知.md
+      - 稀疏表示与字典学习: 知识点/稀疏信号处理/稀疏表示与字典学习.md
+      - ISTA与FISTA: 知识点/稀疏信号处理/ISTA与FISTA.md
+      - ADMM: 知识点/稀疏信号处理/ADMM.md
+    - 贝叶斯方法:
+      - 贝叶斯推断: 知识点/贝叶斯方法/贝叶斯推断.md
+      - 概率图模型: 知识点/贝叶斯方法/概率图模型.md
+      - 变分推断: 知识点/贝叶斯方法/变分推断.md
+      - MCMC: 知识点/贝叶斯方法/MCMC.md
+    - 优化方法:
+      - 梯度下降与变体: 知识点/优化方法/梯度下降与变体.md
+      - 凸优化基础: 知识点/优化方法/凸优化基础.md
+      - ADMM算法: 知识点/优化方法/ADMM算法.md
+      - 近端算子: 知识点/优化方法/近端算子.md
+    - 阵列信号处理:
+      - 阵列信号模型: 知识点/阵列信号处理/阵列信号模型.md
+      - 波束形成: 知识点/阵列信号处理/波束形成.md
+      - DOA估计: 知识点/阵列信号处理/DOA估计.md
+      - MIMO雷达: 知识点/阵列信号处理/MIMO雷达.md
+    - 图信号处理:
+      - 图论基础: 知识点/图信号处理/图论基础.md
+      - 图傅里叶变换: 知识点/图信号处理/图傅里叶变换.md
+      - 图滤波器: 知识点/图信号处理/图滤波器.md
+      - 图卷积网络: 知识点/图信号处理/图卷积网络.md
+  - 项目:
+    - 项目一（经典方法）: projects/project1/overview.md
+    - 项目二（AI方法）: projects/project2/overview.md
+  - 实验:
+    - 实验大纲: labs/overview.md
+  - 补充知识:
+    - Python速修: 知识点/Python信号处理速修.md
+    - 概率论速修: 知识点/概率论速修.md
+    - 复数与欧拉公式: 知识点/复数与欧拉公式速修.md
